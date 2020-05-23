@@ -24,6 +24,10 @@ public class Cave {
         this.rooms[item.getPosition().getX()][item.getPosition().getY()].addItem(item);
     }
 
+    public void addSensor(Sensor sensor) {
+        this.rooms[sensor.getPosition().getX()][sensor.getPosition().getY()].addSensor(sensor);
+    }
+
     public void printAllCave() {
         for (Room[] row : this.rooms)
             System.out.println(Arrays.toString(row));

@@ -15,6 +15,9 @@ public class Room {
         this.items.add(item);
     }
 
+    public void addSensor(Sensor sensor) {
+        this.sensors.add(sensor);
+    }
 
     @Override
     public String toString() {
