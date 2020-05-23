@@ -12,6 +12,13 @@ public class Cave {
         this.rooms = new Room[size.getHeight()][size.getWidth()];
     }
 
+    public void initialize() {
+        for (int i = 0; i < this.size.getHeight(); i++) {
+            for (int j = 0; j < this.size.getWidth(); j++) {
+                this.rooms[i][j] = new Room();
+            }
+        }
+    }
     public void printAllCave() {
         for (Room[] row : this.rooms)
             System.out.println(Arrays.toString(row));
