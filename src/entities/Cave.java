@@ -19,6 +19,11 @@ public class Cave {
             }
         }
     }
+
+    public void addItem(Item item) {
+        this.rooms[item.getPosition().getX()][item.getPosition().getY()].addItem(item);
+    }
+
     public void printAllCave() {
         for (Room[] row : this.rooms)
             System.out.println(Arrays.toString(row));

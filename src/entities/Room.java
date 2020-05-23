@@ -11,6 +11,9 @@ public class Room {
         this.sensors = new ArrayList<Sensor>();
     }
 
+    public void addItem(Item item) {
+        this.items.add(item);
+    }
 
 
     @Override
